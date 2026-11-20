@@ -131,6 +131,7 @@ img {
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none; /* para cuando se usa en un <a> */
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -637,13 +638,15 @@ section {
 
 .site-footer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem;
+  text-align: center;
+  gap: 0.75rem;
   padding: 2rem var(--page-gutter);
   background-color: var(--negro);
   color: var(--blanco);
+  transform: translateY(-2px);
 }
 
 
