@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>ChillMix | Tus papas preparadas donde quieras</title>
-</head>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="description" content="Papas preparadas y deliciosas para disfrutar en cualquier lugar.">
   <meta name="keywords" content="Papas, comida rápida, delivery, ChillMix, papas preparadas, papas fritas, alimentos">
   <meta name="author" content="ChillMix Team">
@@ -11,8 +9,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
-   <link rel="stylesheet" href="css/style.css">
-<title>ChillMix | Tus papas preparadas donde quieras</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>ChillMix | Tus papas preparadas donde quieras</title>
 
 </head>
 <!-- AQUI INICIA EL CUERPO DE MI PAGINA-->
@@ -67,10 +65,10 @@
 
 
       <!-- VIDEO -->
-      <article class="media-card media-cardvideo" data-video-card>
+      <article class="media-card media-card--video" data-video-card>
         <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
         <video
-          class="media-card media-card-video"
+          class="media-card__media media-card__video"
           data-hover-video
           muted
           loop
@@ -129,7 +127,7 @@
         <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
         <img
           class="media-card__media media-card__image"
-          src="img/CHILLMIX(5).png"
+          src="img/CHILMIX(5).png"
           alt="CHILLMIX COSTUMER"
           loading="lazy">
 
@@ -145,6 +143,60 @@
       </article>
 
 
+    </section> <!--FIN DEL HERO-->
+
+    <!--SECCION PRODUCTOS Y SERVICIOS-->
+
+    <section id="productos" class="products">
+      <div class="container">
+       <div class="section-heading reveal">
+          <p class="section-subtitle">Explora nuestra variedad</p>
+          <h2 class="section-title">Nuestros Productos</h2>
+          <p class="section-description">Descubre nuestra variedad de papas preparadas, listas para disfrutar en cualquier lugar.</p>
+        </div>
+
+        
+          <!--SERVICIO 1- TARJETA-->
+
+    <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="img/CHILMIX(2).png" alt="CHILLMIX RUDAS">
+            <div class="product-body">
+              <span class="tag">Favorito</span>
+              <h3>Las nuevas integrantes de la familia</h3>
+              <p class="price">$35 MXN</p>
+              <p class="description">Papas fritas artesanales con salsas negras y especias.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">¡Conócelas!</button>
+            </div>
+          </article>
+
+
+           <!--SERVICIO 2- TARJETA-->
+          <article class="product-card reveal">
+            <img src="img/CHILMIX(3).png" alt="CHILLMIX BRAVAS">
+            <div class="product-body">
+              <span class="tag">Nuevo</span>
+              <h3>Las clásicas que todos aman</h3>
+              <p class="price">$30 MXN</p>
+              <p class="description">Papas fritas con salsa brava y especias.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-bravas')">¡Conócelas!</button>
+            </div>
+          </article>
+
+           <!--SERVICIO 3- TARJETA-->
+          <article class="product-card reveal">
+            <img src="img/CHILMIX(4).png" alt="CHILLMIX DULCES">
+            <div class="product-body">
+              <span class="tag">Popular</span>
+              <h3>Las deliciosas que todos aman</h3>
+              <p class="price">$35 MXN</p>
+              <p class="description">Papas fritas con salsa dulce y especias.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-dulces')">¡Conócelas!</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
 
@@ -153,7 +205,7 @@
 
 <!-- Pie de página -->
   <footer class="site-footer">
-    <p>© <span id="current-year"></span> TU MARCA. Todos los derechos reservados.</p>
+    <p>© <span id="current-year"></span> CHILLMIX. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
 
