@@ -166,7 +166,7 @@
               <h3>Las nuevas integrantes de la familia</h3>
               <p class="price">$35 MXN</p>
               <p class="description">Papas fritas artesanales con salsas negras y especias.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">¡Conócelas!</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Favorito')">¡Conócelas!</button>
             </div>
           </article>
 
@@ -179,7 +179,7 @@
               <h3>Las clásicas que todos aman</h3>
               <p class="price">$30 MXN</p>
               <p class="description">Papas fritas con salsa brava y especias.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-bravas')">¡Conócelas!</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Nuevo')">¡Conócelas!</button>
             </div>
           </article>
 
@@ -191,7 +191,7 @@
               <h3>Las deliciosas que todos aman</h3>
               <p class="price">$35 MXN</p>
               <p class="description">Papas fritas con salsa dulce y especias.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-dulces')">¡Conócelas!</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Popular')">¡Conócelas!</button>
             </div>
           </article>
 
@@ -314,6 +314,7 @@
             <li><i data-lucide="facebook"></i> <a href="https://www.facebook.com/share/1FhhFBn95c/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Alan Jandette</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:a.janete@ebc.edu.mx">a.janete@ebc.edu.mx</a></li>
             <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 18:30</li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/SbVbk2me1rkRF7wq8" target="_blank" rel="noopener noreferrer">Andapa Arantiranana Madagascar</a></li>
           </ul>
         </aside>
       </div>
@@ -327,6 +328,76 @@
     <p>© <span id="current-year"></span> CHILLMIX. Todos los derechos reservados.</p>
     <a href="#inicio" class="btn-primary">Volver arriba ↑</a>
   </footer>
+
+<!--MODAL PARA LOS PRODUCTOS O SERVICIOS-->
+
+<div id="modal-Favorito" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Favorito-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/CHILMIX(2).png" alt="CHILLMIX RUDAS: papas con salsa negra y especias">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Favorito')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Favorito-title">Las nuevas integrantes de la familia</h2>
+        <p class="price">$35 MXN</p>
+        <p>Papas fritas artesanales con salsas negras y especias.</p>
+        <h3>Ingredientes:</h3>
+        <ul>
+          <li>Papas fritas</li>
+          <li>Salsa negra</li>
+          <li>Especias</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir las nuevas integrantes de la familia.')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
+
+<div id="modal-Nuevo" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Nuevo-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/CHILMIX(3).png" alt="Papas fritas con salsa brava y especias..">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Nuevo')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Nuevo-title">Las clásicas que todos aman</h2>
+        <p class="price">$30 MXN</p>
+        <p>Papas fritas con salsa brava y especias.</p>
+        <h3>Ingredientes:</h3>
+        <ul>
+          <li>Papas fritas</li>
+          <li>Salsa brava</li>
+          <li>Especias</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir las clásicas que todos aman.')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
+
+<div id="modal-Popular" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Popular-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/CHILMIX(4).png" alt="Las deliciosas que todos aman">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Popular')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Popular-title">Las deliciosas que todos aman</h2>
+        <p class="price">$35 MXN</p>
+        <p>Papas fritas con salsa dulce y especias.</p>
+        <h3>Ingredientes:</h3>
+        <ul>
+          <li>Papas fritas</li>
+          <li>Salsa dulce</li>
+          <li>Especias</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir las deliciosas que todos aman.')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
 
   <script src="js/script.js"></script>
 

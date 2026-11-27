@@ -146,3 +146,55 @@ videoCards.forEach((card) => {
     }
   });
 });
+
+
+
+// ===== MODALES DE PRODUCTOS =====
+let lastFocusedElement = null;
+
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) {
+    console.warn("No existe un modal con el id:", id);
+    return;
+  }
+  lastFocusedElement = document.activeElement;
+  modal.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+  const closeButton = modal.querySelector(".modal-close");
+  if (closeButton) closeButton.focus();
+}
+
+
+
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.remove("is-open");
+  document.body.style.overflow = "";
+  if (lastFocusedElement) lastFocusedElement.focus();
+}
+
+// Cerrar al dar click en el fondo oscuro (fuera del panel)
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) closeModal(modal.id);
+  });
+});
+
+// Cerrar con la tecla Escape
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  const openedModal = document.querySelector(".modal.is-open");
+  if (openedModal) closeModal(openedModal.id);
+});
+
+
+// ===== WHATSAPP =====
+// Cambia este número por el tuyo: código de país + número, sin espacios ni signos (ej. 52 + 10 dígitos)
+const WHATSAPP_NUMBER = "5215555555555";
+
+function openWhatsApp(message) {
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank", "noopener");
+}
